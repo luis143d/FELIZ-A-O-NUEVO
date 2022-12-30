@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Año Nuevo</title>
+	</head>
+	<body onclick="playaudio()">
+		<main>
+			<h1>Año Nuevo en</h1>
+			<div class="counter">
+				<div class="time">
+					<span id="days">00</span>
+					<span>Días</span>
+				</div>
+				<div class="time">
+					<span id="hours">00</span>
+					<span>Horas</span>
+				</div>
+				<div class="time">
+					<span id="minutes">00</span>
+					<span>Minutos</span>
+				</div>
+				<div class="time">
+					<span id="seconds">00</span>
+					<span>Segundos</span>
+				</div>
+			</div>
+		</main>
+		<p class="new-year"></p>
+		<audio id="audio"  loop>
+			<source src="audio/X2Download.app - Coldplay - Viva La Vida (Official Video) (128 kbps).mp3" type="audio/mpeg">
+			<source src="audio/X2Download.app - Coldplay - Viva La Vida (Official Video) (128 kbps).mp3" type="audio/wav">
+			<source src="audio/X2Download.app - Coldplay - Viva La Vida (Official Video) (128 kbps).mp3" type="audio/ogg">
+	  </audio>
+	  <script>
+		  function playaudio(){
+			  document.getElementById("audio").play();
+		  }
+	  </script>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	font-family: 'Great Vibes', cursive;
+	background-image: url('https://images.unsplash.com/photo-1549861833-c5932fd19229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80');
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75vh;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+.counter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	min-width: 400px;
+	max-width: 750px;
+}
+
+.time {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 3.5rem;
+}
+
+.time > span:nth-child(2) {
+	font-size: 2.5rem;
+}
+
+.new-year {
+	text-align: center;
+	margin: 0;
+	font-size: 10rem;
+	opacity: 0.5;
+}
+
+.time.loading {
+	width: 105px;
+	color: transparent;
+	border-radius: 8px;
+	background: linear-gradient(-90deg, #c1c1c1 0%, #f8f8f8 50%, #c1c1c1 100%);
+	background-size: 400% 400%;
+	animation: skeletonLoader 0.5s ease-in-out infinite;
+}
+
+@keyframes skeletonLoader {
+	from {
+		background-position: 0% 0%;
+	}
+	to {
+		background-position: -135% 0%;
+	}
+}
